@@ -1,46 +1,32 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Garfield0's Homepage
+tagline: Knowledge is Knowledge, and vice versa. -Tee shirt Stanford University Heuristic Programming Project
 ---
 {% include JB/setup %}
 
-Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
+## 刀法
+   庖丁为文惠君解牛，手之所触，肩之所倚，足之所履，膝之所踦，砉然响然，奏刀騞然，莫不中音。合于《桑林》之舞，乃中《经首》之会。文惠君曰：“嘻！善哉！技盖至此乎？”庖丁释刀对曰：“臣之所好者道也，进乎技矣。始臣之解牛之时，所见无非牛者。三年之后，未尝见全牛也。方今之时，臣以神遇，而不以目视，官知止而神欲行。依乎天理，批大郤，道大窾，因其固然。技经肯綮之未尝，而况大軱乎！良庖岁更刀，割也；族庖月更刀，折也。今臣之刀十九年矣，所解数千牛矣，而刀刃若新发于硎。彼节者有间，而刀刃者无厚，以无厚入有间，恢恢乎其于游刃必有余地矣。是以十九年而刀刃若新发于硎。虽然，每至于族，吾见其难为，怵然为戒，视为止，行为迟。动刀甚微，謋然已解，如土委地。提刀而立，为之四顾，为之踌躇满志，善刀而藏之。”文惠君曰：“善哉！吾闻庖丁之言，得养生焉。”
 
-Complete usage and documentation available at: [Jekyll Bootstrap](http://jekyllbootstrap.com)
+   ---《庄子·内篇·养生主》
 
-## Update Author Attributes
+## 心法
+“学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知而不愠，不亦君子乎？”---《论语》
 
-In `_config.yml` remember to specify your own data:
+
+“一切有为法，如梦幻泡影，如露亦如电，应作如是观。”---《金刚经》
+
+
+“道，可道，非常道。”---《道德经》
+
     
-    title : My Blog =)
-    
-    author :
-      name : Name Lastname
-      email : blah@email.test
-      github : username
-      twitter : username
-
-The theme should reference these variables whenever needed.
-    
-## Sample Posts
-
-This blog contains sample posts which help stage pages and blog data.
-When you don't need the samples anymore just delete the `_posts/core-samples` folder.
-
-    $ rm -rf _posts/core-samples
-
-Here's a sample "posts list".
-
+## 最新文章
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
 
-## To-Do
 
-This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
-We need to clean up the themes, make theme usage guides with theme-specific markup examples.
 
 
