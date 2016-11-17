@@ -8,12 +8,12 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Garfield0
+title : Yan Chow
 tagline: Site Tagline
 author :
-  name : Yan Zhou
-  email : zhouyan329@126.com
-  github : garfield0
+  name : Yan Chow
+  email : zhouyan.zero@gmail.com
+  github : hunteras
 #  twitter : username
 #  feedburner : feedname
 
@@ -82,9 +82,7 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : duoshuo
-    duoshuo :
-      short_name : garfield0
+    provider : false
    
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
