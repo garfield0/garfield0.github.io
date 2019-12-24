@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>中国 on Izhouyan - zhouyan&#39;s home</title>
+    <link>http://localhost:1313/tags/%E4%B8%AD%E5%9B%BD/</link>
+    <description>Recent content in 中国 on Izhouyan - zhouyan&#39;s home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 30 Aug 2017 01:37:56 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/%E4%B8%AD%E5%9B%BD/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>庖丁解牛</title>
+      <link>http://localhost:1313/post/paodingjieniu/</link>
+      <pubDate>Wed, 30 Aug 2017 01:37:56 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/paodingjieniu/</guid>
+      <description>庖丁为文惠君解牛，手之所触，肩之所倚，足之所履，膝之所踦，砉然向然，奏刀騞然，莫不中音：合于《桑林》之舞，乃中《经首》之会。 文惠君曰：“嘻，</description>
+    </item>
+    
+  </channel>
+</rss>

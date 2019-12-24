@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>network on Izhouyan - zhouyan&#39;s home</title>
+    <link>http://localhost:1313/categories/network/</link>
+    <description>Recent content in network on Izhouyan - zhouyan&#39;s home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 27 Dec 2017 23:30:17 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/network/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ssh Tunnel</title>
+      <link>http://localhost:1313/post/ssh-tunnel/</link>
+      <pubDate>Wed, 27 Dec 2017 23:30:17 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/ssh-tunnel/</guid>
+      <description>There are three machines, A, B and C. A can not reach C, but A and B, B and C are connected, how to use ssh tunnel to connect A and C?
+All config is set on machine B.
+B to C create a tunnel from B to C, using local forwarding
+ ssh -L 2001:localhost:9000 C -N
+ The –L option specifies local forwarding, in which the TCP client is on the local machine with the SSH client.</description>
+    </item>
+    
+  </channel>
+</rss>

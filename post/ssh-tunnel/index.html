@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Ssh Tunnel - Izhouyan - zhouyan&#39;s home</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="izhouyan" />
+  <meta name="description" content="There are three machines, A, B and C. A can not reach C, but A and B, B and C are connected, how to use ssh tunnel to connect A and C?
+All config is set on machine B.
+B to C create a tunnel from B to C, using local forwarding
+ ssh -L 2001:localhost:9000 C -N
+ The –L option specifies local forwarding, in which the TCP client is on the local machine with the SSH client." />
+
+  <meta name="keywords" content="zhouyan, program, lisp" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.61.0" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/ssh-tunnel/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.ico" />
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<link href="/dist/even.min.css?v=2.7.0" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+<meta property="og:title" content="Ssh Tunnel" />
+<meta property="og:description" content="There are three machines, A, B and C. A can not reach C, but A and B, B and C are connected, how to use ssh tunnel to connect A and C?
+All config is set on machine B.
+B to C create a tunnel from B to C, using local forwarding
+ ssh -L 2001:localhost:9000 C -N
+ The –L option specifies local forwarding, in which the TCP client is on the local machine with the SSH client." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/ssh-tunnel/" />
+<meta property="article:published_time" content="2017-12-27T23:30:17+08:00" />
+<meta property="article:modified_time" content="2017-12-27T23:30:17+08:00" />
+<meta itemprop="name" content="Ssh Tunnel">
+<meta itemprop="description" content="There are three machines, A, B and C. A can not reach C, but A and B, B and C are connected, how to use ssh tunnel to connect A and C?
+All config is set on machine B.
+B to C create a tunnel from B to C, using local forwarding
+ ssh -L 2001:localhost:9000 C -N
+ The –L option specifies local forwarding, in which the TCP client is on the local machine with the SSH client.">
+<meta itemprop="datePublished" content="2017-12-27T23:30:17&#43;08:00" />
+<meta itemprop="dateModified" content="2017-12-27T23:30:17&#43;08:00" />
+<meta itemprop="wordCount" content="209">
+
+
+
+<meta itemprop="keywords" content="izhouyan,linux," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ssh Tunnel"/>
+<meta name="twitter:description" content="There are three machines, A, B and C. A can not reach C, but A and B, B and C are connected, how to use ssh tunnel to connect A and C?
+All config is set on machine B.
+B to C create a tunnel from B to C, using local forwarding
+ ssh -L 2001:localhost:9000 C -N
+ The –L option specifies local forwarding, in which the TCP client is on the local machine with the SSH client."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Izhouyan</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Izhouyan</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Ssh Tunnel</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2017-12-27 </span>
+        <div class="post-category">
+            
+              <a href="/categories/linux/"> linux </a>
+            
+              <a href="/categories/ssh/"> ssh </a>
+            
+              <a href="/categories/tool/"> tool </a>
+            
+              <a href="/categories/network/"> network </a>
+            
+          </div>
+        <span class="more-meta"> 209 word </span>
+        <span class="more-meta"> 1 min read </span>
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents"></nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>There are three machines, A, B and C. A can not reach C, but A and B, B and C are connected, how to use ssh tunnel to connect A and C?</p>
+<p>All config is set on machine B.</p>
+<h1 id="b-to-c">B to C</h1>
+<p>create a tunnel from B to C, using local forwarding</p>
+<blockquote>
+<p>ssh -L 2001:localhost:9000 C -N</p>
+</blockquote>
+<p>The –L option specifies local forwarding, in which the TCP client is on the local machine with the SSH client.
+The option is followed by three values separated by colons: a local port to listen on (2001), the remote machine name or IP address (C), and the remote, target port number (9000).</p>
+<h1 id="b-to-a">B to A</h1>
+<p>create a tunel from B to A, using remote forwarding</p>
+<blockquote>
+<p>ssh -R 9000:localhost:2001 A -N</p>
+</blockquote>
+<p>The –R option specifies remote forwarding. The remote port to be forwarded (9000) is now first, followed by the machine name or IP address (localhost) and port number (2001). SSH can now forward connections from (localhost,2001) to (A,9000).</p>
+<h1 id="usage">Usage</h1>
+<p>Now, create a http server on C.</p>
+<blockquote>
+<p>python2 -m SimpleHTTPServer 9000</p>
+</blockquote>
+<p>Connect from A, we can see the result.</p>
+<blockquote>
+<p>wget localhost:9000</p>
+</blockquote>
+<p>We create a ssh tunnel on machine B using port 2001, to connect port 9000 on machine A and C.</p>
+<p>That's it.</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">izhouyan</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2017-12-27</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/izhouyan/">izhouyan</a>
+          
+          <a href="/tags/linux/">linux</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/http-log-ip/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Read http server log with command tools</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/paodingjieniu/">
+            <span class="next-text nav-default">庖丁解牛</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+        
+        
+        if (window.location.hostname === 'localhost') return;
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'izhouyan';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com/" class="dsq-brlink" target="_blank">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:zhouyan.zero@gmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://www.linkedin.com/in/yan-chow-621a91a0/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/hunteras" class="iconfont icon-github" title="github"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2017 - 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">izhouyan</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=2.7.0"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-111399611-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</body>
+</html>

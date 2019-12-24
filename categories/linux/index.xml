@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Izhouyan - zhouyan&#39;s home</title>
+    <link>http://localhost:1313/categories/linux/</link>
+    <description>Recent content in linux on Izhouyan - zhouyan&#39;s home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 29 Dec 2017 23:21:04 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Read http server log with command tools</title>
+      <link>http://localhost:1313/post/http-log-ip/</link>
+      <pubDate>Fri, 29 Dec 2017 23:21:04 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/http-log-ip/</guid>
+      <description>Http server&#39;s log is a treasure, you can use linux tools to find many interesting things.
+Http server&#39;s log files normaly stay below dir /var/log/{nginx|apache}.
+Cat the log file to read it.
+ cat /var/log/nginx/access.log
+ File contens are like this.
+ x.x.x.x - - [DD/MM/YYYY:HH:mm:ss -TZ] &amp;ldquo;GET /robots.txt HTTP/1.1&amp;rdquo; 200 57 &amp;ldquo;-&amp;rdquo; &amp;ldquo;Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)&amp;rdquo;
+ It shows ip address, time, http method, url, status code, response length, client and so on line by line.</description>
+    </item>
+    
+    <item>
+      <title>Ssh Tunnel</title>
+      <link>http://localhost:1313/post/ssh-tunnel/</link>
+      <pubDate>Wed, 27 Dec 2017 23:30:17 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/ssh-tunnel/</guid>
+      <description>There are three machines, A, B and C. A can not reach C, but A and B, B and C are connected, how to use ssh tunnel to connect A and C?
+All config is set on machine B.
+B to C create a tunnel from B to C, using local forwarding
+ ssh -L 2001:localhost:9000 C -N
+ The –L option specifies local forwarding, in which the TCP client is on the local machine with the SSH client.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Izhouyan - zhouyan&#39;s home</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on Izhouyan - zhouyan&#39;s home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 22 Apr 2018 23:27:02 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ansible</title>
+      <link>http://localhost:1313/categories/ansible/</link>
+      <pubDate>Sun, 22 Apr 2018 23:27:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/ansible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devops</title>
+      <link>http://localhost:1313/categories/devops/</link>
+      <pubDate>Sun, 22 Apr 2018 23:27:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>http://localhost:1313/categories/docker/</link>
+      <pubDate>Sun, 22 Apr 2018 23:27:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>elasticsearch</title>
+      <link>http://localhost:1313/categories/elasticsearch/</link>
+      <pubDate>Sun, 22 Apr 2018 23:27:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/elasticsearch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>http</title>
+      <link>http://localhost:1313/categories/http/</link>
+      <pubDate>Fri, 29 Dec 2017 23:21:04 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/http/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>http://localhost:1313/categories/linux/</link>
+      <pubDate>Fri, 29 Dec 2017 23:21:04 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>network</title>
+      <link>http://localhost:1313/categories/network/</link>
+      <pubDate>Wed, 27 Dec 2017 23:30:17 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>http://localhost:1313/categories/ssh/</link>
+      <pubDate>Wed, 27 Dec 2017 23:30:17 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tool</title>
+      <link>http://localhost:1313/categories/tool/</link>
+      <pubDate>Wed, 27 Dec 2017 23:30:17 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/tool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>庄子</title>
+      <link>http://localhost:1313/categories/%E5%BA%84%E5%AD%90/</link>
+      <pubDate>Wed, 30 Aug 2017 01:37:56 +0800</pubDate>
+      
+      <guid>http://localhost:1313/categories/%E5%BA%84%E5%AD%90/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>elasticsearch on Izhouyan - zhouyan&#39;s home</title>
+    <link>http://localhost:1313/tags/elasticsearch/</link>
+    <description>Recent content in elasticsearch on Izhouyan - zhouyan&#39;s home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 22 Apr 2018 23:27:02 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Elasticsearch with docker and ansible</title>
+      <link>http://localhost:1313/post/esansible/</link>
+      <pubDate>Sun, 22 Apr 2018 23:27:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/esansible/</guid>
+      <description>Let&#39;s set up an elasticseach with kibana using docker and ansible.
+Find or set up a machine with docker installed, we use localhost.
+Build docker image - hosts: localhost connection: local gather_facts: no tasks: - name: Working dir command: &amp;#34;pwd&amp;#34; register: work_dir - name: Show work dir debug: var: work_dir.stdout - name: build ubuntu images command: docker build -t ubuntu-aliyun:16.04 . args: chdir: &amp;#34;{{ work_dir.stdout }}/images/ubuntu-aliyun-16.04&amp;#34; - name: build jdk images command: docker build -t jdk:1.</description>
+    </item>
+    
+  </channel>
+</rss>
